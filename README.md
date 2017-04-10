@@ -4,6 +4,7 @@ My solution for finding biggest square in histogram for [this](https://github.co
 ## Compile
 ```sh
 make
+```
 
 ## Run
 ```sh
