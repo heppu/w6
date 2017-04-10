@@ -2,11 +2,16 @@
 My solution for finding biggest square in histogram for [this](https://github.com/wunderdogsw/wunderpahkina-vol6) code challenge.
 
 ## Compile
-$ gcc w6.c -o w6 -Ofast
+```sh
+make
 
 ## Run
-$ ./w6 input.txt
-40401
+```sh
+make run
+```
 
 ## Benchmark
-$ perf stat -r 100000 -d ./w6 ../input.txt > /dev/null
+Requires perf to be installed
+```sh
+make bench
+```
