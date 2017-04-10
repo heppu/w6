@@ -68,10 +68,7 @@ int main (int argc, char *argv[]) {
 
     // Parse ascii bytes to unsigned integers
     // After quite a lot of bencmarking found this to be
-    // the most efficient way af parsing unsigned integers.
-    // I was kind of hoping that data set would have much bigger
-    // so I could have used gpu to do parsing but the over head
-    // for data set this small made it slower. =(
+    // the most efficient way of parsing unsigned integers.
     unsigned int num = 0, index = 0, start = 0;
     unsigned int nums[sb.st_size / 2];
 
@@ -95,7 +92,7 @@ int main (int argc, char *argv[]) {
     // i7-7500U CPU amount of branch prediction misses
     // (6.87% vs 2.00%) and amount of instructions per cycle
     // (1.52 vs 2.30) were the main reasons why this almost 2x
-    // complex solution is actually faster.
+    // complex solution is actually much faster.
     unsigned int size = 0, width = 0, height = 1;
     unsigned int prevSmallest = nums[0], prevSmallestIndex = 0;
 
